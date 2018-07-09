@@ -1,0 +1,26 @@
+html {
+  font-size:16px;
+}
+
+
+.navbar-menu {
+  li {
+    margin-top:0!important;
+    a {
+      color:white;
+    }
+  }
+}
+
+.hero {
+  .has-text-centered {
+    h1 {
+      font-size:3.5rem;
+      text-shadow:0 0 30px #333;
+    }
+    h4 {
+      font-size:2rem;
+      text-shadow:0 0 30px #333;
+    }
+  }
+}
