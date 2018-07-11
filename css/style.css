@@ -834,12 +834,14 @@ html {
     .navbar .navbar-menu li a {
       color: white; }
 
-.hero .has-text-centered h1 {
-  font-size: 3.5rem;
-  text-shadow: 0 0 30px #333; }
-.hero .has-text-centered h4 {
-  font-size: 2rem;
-  text-shadow: 0 0 30px #333; }
+.hero {
+  background-size: cover !important; }
+  .hero .has-text-centered h1 {
+    font-size: 3.5rem;
+    text-shadow: 0 0 30px #333; }
+  .hero .has-text-centered h4 {
+    font-size: 2rem;
+    text-shadow: 0 0 30px #333; }
 
 .testimonials {
   background: #eee; }

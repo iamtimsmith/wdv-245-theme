@@ -192,7 +192,7 @@ function site_customize_css() { ?>
 			.navbar {background-color:<?php echo get_theme_mod( 'header_bg' ); ?>;}
 			.navbar a {color:<?php echo get_theme_mod( 'headerLink' ); ?>;}
 			.footer {background-color:<?php echo get_theme_mod( 'footer_bg' ); ?>; color:<?php echo get_theme_mod( 'footer_text' ); ?>;}
-			.footer a, .footer {color:<?php echo get_theme_mod( 'footer_link' ); ?>;}
+			.footer a {color:<?php echo get_theme_mod( 'footer_link' ); ?>;}
 			.section.hero {background:<?php echo get_theme_mod( 'hero_color' ); ?>; background-image:url("<?php echo get_theme_mod( 'hero' ); ?>"); color:<?php echo get_theme_mod('hero_color'); ?>;}
 	</style>
 	<?php
