@@ -824,10 +824,15 @@ object {
 html {
   font-size: 16px; }
 
-.navbar-menu li {
-  margin-top: 0 !important; }
-  .navbar-menu li a {
-    color: white; }
+.navbar {
+  z-index: 4; }
+  .navbar .navbar-burger span {
+    height: 2px;
+    background: white; }
+  .navbar .navbar-menu li {
+    margin-top: 0 !important; }
+    .navbar .navbar-menu li a {
+      color: white; }
 
 .hero .has-text-centered h1 {
   font-size: 3.5rem;
@@ -835,5 +840,38 @@ html {
 .hero .has-text-centered h4 {
   font-size: 2rem;
   text-shadow: 0 0 30px #333; }
+
+.testimonials {
+  background: #eee; }
+  .testimonials p {
+    padding: 50px 0;
+    opacity: 0;
+    transition: all 1s; }
+    .testimonials p img {
+      height: 30px;
+      margin-right: 10px;
+      opacity: 0.25; }
+    .testimonials p.show {
+      opacity: 1; }
+
+.widget-form .widget {
+  list-style: none; }
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  padding: 15px;
+  background: black;
+  z-index: 5;
+  transition: all .5s; }
+  .offcanvas.slide-out {
+    left: 0;
+    width: 100%; }
+  .offcanvas a {
+    color: white;
+    font-size: 1.25rem; }
 
 /*# sourceMappingURL=style.css.map */

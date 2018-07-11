@@ -13,19 +13,22 @@
 
 	</div><!-- #content -->
 
+	<div class="offcanvas">
+		<p class="has-text-right">
+			<span class="navbar-close delete is-large"></span>
+		</p>
+		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_class'     => '',
+				'container'		 => false
+			) );
+			?>
+	</div>
+
 	<footer id="colophon" class="footer">
 		<div class="container">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wdv-245' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'wdv-245' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'wdv-245' ), 'wdv-245', '<a href="https://www.iamtimsmith.com">Tim Smith</a>' );
-				?>
+			<p class="has-text-centered is-size-7">Website by <a href="https://www.iamtimsmith.com">Tim Smith</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

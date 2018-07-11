@@ -2,15 +2,24 @@ html {
   font-size:16px;
 }
 
-
-.navbar-menu {
-  li {
-    margin-top:0!important;
-    a {
-      color:white;
+.navbar {
+  z-index:4;
+  .navbar-burger {
+    span {
+      height:2px;
+      background:white;
+    }
+  }
+  .navbar-menu {
+    li {
+      margin-top:0!important;
+      a {
+        color:white;
+      }
     }
   }
 }
+
 
 .hero {
   .has-text-centered {
@@ -22,5 +31,48 @@ html {
       font-size:2rem;
       text-shadow:0 0 30px #333;
     }
+  }
+}
+
+.testimonials {
+  background:#eee;
+  p {
+    padding:50px 0;
+    opacity:0;
+    transition:all 1s;
+    img {
+      height:30px;
+      margin-right:10px;
+      opacity:0.25;
+    }
+    &.show {
+      opacity:1;
+    }
+  }
+}
+
+.widget-form {
+  .widget {
+    list-style:none;
+  }
+}
+
+.offcanvas {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:-300px;
+  width:300px;
+  padding:15px;
+  background:black;
+  z-index:5;
+  transition:all .5s;
+  &.slide-out {
+    left:0;
+    width:100%;
+  }
+  a {
+    color:white;
+    font-size:1.25rem;
   }
 }
